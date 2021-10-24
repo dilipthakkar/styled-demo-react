@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Header from "./components/header";
+import { FillItem, Grid, GridItem } from "./styled-component/container";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Grid>
+        <GridItem
+          lg={4}
+          style={{
+            backgroundColor: "red",
+            display: "block",
+            width: 300,
+            height: 400,
+          }}
+        ></GridItem>
+
+        <GridItem
+          lg={3}
+          style={{
+            backgroundColor: "teal",
+            display: "block",
+            width: 300,
+            height: 400,
+          }}
+        ></GridItem>
+      </Grid>
     </div>
   );
 }
